@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salil - Photography Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Poppins:ital,wght@0,100;0,400;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Poppins:ital,wght@0,100;0,400;0,600;1,700&family=Press+Start+2P&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="lightbox.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      
+    >
+    
+    </script>
+    
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-image: url("LDK_3220.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+        font-family: "poppins", sans serif;
+        min-height: 100vh;
+        height: 100%;
+        /* padding: 75px; */
+        /* width: 1920px;
+        height: 2159px; */
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        /* background-color: rgb(148, 181, 243); */
+        position: sticky;
+        width: 100%;
+        top: 0;
+        transition: all 0.5s;
+        z-index: 1000;
+      }
+
+      .active {
+        background-color: black;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        margin: 0 23px;
+        color: white;
+      }
+
+      .left{
+        font-size: 3.5rem;
+      }
+
+      nav ul li a:hover {
+        text-decoration: none;
+        margin: 0 23px;
+        color: rgb(49, 146, 211);
+        transform: scale(1.1);
+      }
+
+      .more-photos{
+        width: 100%;
+        height: 120vh;
+        display: grid;
+        align-items: auto;
+        justify-items: auto;
+        /* grid-template-columns: repeat(auto-fit, monmax(250px, 1fr)); */
+        padding: 20px;
+
+      }
+
+      .images img{
+
+        transition: 0.5s;
+        width: 230px;
+        padding: 10px;
+        filter: grayscale(100%);
+        border-radius: 20px;
+        
+      }
+
+      
+      .images img:hover{
+        filter: grayscale(0);
+        transform: scale(1.09);
+      }
+
+
+      footer {
+        background-color: #00000080;
+        width: auto;
+        height: 100px;
+        z-index: 1000;
+        /* margin-top: 2159px; */
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .socials {
+        display: flex;
+        margin-top: 34px;
+        margin-left: 21px;
+        font-size: 1.5rem;
+        justify-content: center;
+      }
+
+       .prev{
+        margin-left: 1700px;
+        width: 95px;
+        max-height: 45px;
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff32;
+        font-size: 20px;
+        border-radius: 20px;
+        margin-top: -70px;
+      }
+
+      .prev:hover{
+        background-color: rgb(90, 153, 248, 0.60);
+        transform: scale(1.1);
+      }
+
+      button {
+        display: flex;
+        width: 40px;
+        background-color: transparent;
+        border-width: 0px;
+        cursor: pointer;
+        width: 40px;
+        scale: 0.8;
+        margin-left: 20px;
+      }
+
+      button .insta {
+        margin-left: -90px;
+      }
+
+      .insta {
+        scale: 1;
+      }
+
+      .twitter {
+        scale: 1.2;
+      }
+
+      .linkedin {
+        scale: 0.9;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="left">Salil Jain Photography</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-me.html">About Me</a></li>
+          <li><a href="more-photos.html">More Photos</a></li>
+          <li><a href="contact-me.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <main>
+      <div class="more-photos">
+        <div class="images">
+            <a href="Wildlife/DSC_0358.jpg" data-lightbox="Wildlife" data-title="Caption">
+                <img src="Wildlife/DSC_0358.jpg" alt="">
+            </a>
+       <a href="Wildlife/SJW_1637.jpg" data-lightbox="Wildlife" data-title="Caption">
+        <img src="Wildlife/SJW_1637.jpg" alt="">
+       </a>
+        
+       <a href="Wildlife/SJW_2209.jpg" data-lightbox="Wildlife" data-title="Caption">
+        <img src="Wildlife/SJW_2209.jpg" alt="">
+       </a>
+       
+       <a href="Wildlife/SJW_2870(BnW).jpg" data-lightbox="Wildlife" data-title="Caption">
+        <img src="Wildlife/SJW_2870(BnW).jpg" alt="">
+       </a>
+       
+       
+       <a href="Wildlife/SJW_2897.jpg" data-lightbox="Wildlife" data-title="Caption">
+        <img src="Wildlife/SJW_2897.jpg" alt="">
+       </a>
+       
+       <a href="Wildlife/SJW_3089(Crop).jpg" data-lightbox="Wildlife" data-title="Caption">
+        <img src="Wildlife/SJW_3089(Crop).jpg" alt="">
+       </a>
+        
+       <a href="Wildlife/SJW_3107.jpg" data-lightbox="Wildlife" data-title="Caption">
+        <img src="Wildlife/SJW_3107.jpg" alt="">
+       </a>
+        
+       <a href="Wildlife/SJW_4652.jpg" data-lightbox="Wildlife" data-title="Caption">
+        <img src="Wildlife/SJW_4652.jpg" alt="">
+       </a>
+        
+       <a href="Wildlife/SJW_5063.jpg" data-lightbox="Wildlife" data-title="Caption">
+        <img src="Wildlife/SJW_5063.jpg" alt="">
+       </a>
+        
+       <a href="Wildlife/SJW_5212.jpg" data-lightbox="Wildlife" data-title="Caption">
+        <img src="Wildlife/SJW_5212.jpg" alt="">
+       </a>
+        
+       <a href="Wildlife/SJW_7355.jpg" data-lightbox="Wildlife" data-title="Caption">
+        <img src="Wildlife/SJW_7355.jpg" alt="">
+       </a>
+        
+       <a href="Wildlife/SJW_7403.jpg" data-lightbox="Wildlife" data-title="Caption">
+        <img src="Wildlife/SJW_7403.jpg" alt="">
+       </a>
+        
+       <a href="Wildlife/SJW_8478.jpg" data-lightbox="Wildlife" data-title="Caption">
+        <img src="Wildlife/SJW_8478.jpg" alt="">
+       </a>
+
+       <a href="Wildlife/SJW_8525.jpg" data-lightbox="Wildlife" data-title="Caption">
+        <img src="Wildlife/SJW_8525.jpg" alt="">
+       </a>
+        
+       <a href="Wildlife/SJW_8546.jpg" data-lightbox="Wildlife" data-title="Caption">
+        <img src="Wildlife/SJW_8546.jpg" alt="">
+       </a>
+        
+       <a href="Wildlife/SJW_8572.jpg" data-lightbox="Wildlife" data-title="Caption">
+        <img src="Wildlife/SJW_8572.jpg" alt="">
+       </a>
+        
+       <a href="Wildlife/SJW_8595.jpg" data-lightbox="Wildlife" data-title="Caption">
+        <img src="Wildlife/SJW_8595.jpg" alt="">
+       </a>
+        
+       <a href="Wildlife/SJW_9298.jpg" data-lightbox="Wildlife" data-title="Caption">
+        <img src="Wildlife/SJW_9298.jpg" alt="">
+       </a>
+        
+      </div>
+      <button class="prev" onclick="location.href='more-photos.html'" style="padding: 10px;"> Go Back </button>
+      </div>
+      
+    </main>
+    
+
+    <footer>
+      <div class="footer">
+        <div class="socials">
+          Find me at:
+          <button
+            class="insta"
+            type="button"
+            onclick="location.href='https://instagram.com/salil._.jain?igshid=ZDdkNTZiNTM='"
+          >
+            <img src="ig.png" alt="" style="width: 30px" />
+          </button>
+          <button
+            class="twitter"
+            type="button"
+            onclick="location.href='https://twitter.com/Saliljain2510?t=D7-tDbdCBmy_v1bOuCZebw&s=09'"
+          >
+            <img src="tw.png" alt="" style="width: 30px" />
+          </button>
+          <button class="linkedin">
+            <img src="in.png" alt="" style="width: 30px" />
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="lightbox-plus-jquery.js"></script>
+    
+        <script>
+      $(document).ready(function () {
+        $(window).bind("scroll", function () {
+          var gap = 50;
+          if ($(window).scrollTop() > gap) {
+            $("nav").addClass("active");
+          } else {
+            $("nav").removeClass("active");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

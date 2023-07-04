@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salil - Photography Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Poppins:ital,wght@0,100;0,400;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Poppins:ital,wght@0,100;0,400;0,600;1,700&family=Press+Start+2P&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-image: url("LDK_3220.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+        font-family: "poppins", sans serif;
+        min-height: 100vh;
+        height: 100%;
+        /* padding: 75px; */
+        /* width: 1920px;
+        height: 2159px; */
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        /* background-color: rgb(148, 181, 243); */
+        position: sticky;
+        width: 100%;
+        top: 0;
+        transition: all 0.5s;
+        z-index: 1000;
+      }
+
+      .active {
+        background-color: black;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        margin: 0 23px;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        text-decoration: none;
+        margin: 0 23px;
+        color: rgb(49, 146, 211);
+        transform: scale(1.1);
+      }
+
+      .left {
+        font-size: 3.5rem;
+      }
+
+      .aboutME {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 75px;
+      }
+
+      .aboutME > div {
+        width: 809px;
+      }
+
+      .left-section {
+        font-size: 2rem;
+        justify-content: center;
+      }
+
+      footer {
+        background-color: #00000080;
+        width: auto;
+        height: 100px;
+        z-index: 1000;
+        /* margin-top: 2159px; */
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .socials {
+        display: flex;
+        margin-top: 34px;
+        margin-left: 21px;
+        font-size: 1.5rem;
+        justify-content: center;
+      }
+
+      button {
+        display: flex;
+        width: 40px;
+        background-color: transparent;
+        border-width: 0px;
+        cursor: pointer;
+        width: 40px;
+        scale: 0.8;
+        margin-left: 20px;
+      }
+
+      button .insta {
+        margin-left: -90px;
+      }
+
+      .insta {
+        scale: 1;
+      }
+
+      .twitter {
+        scale: 1.2;
+      }
+
+      .linkedin {
+        scale: 0.9;
+      }
+      aboutME {
+        width: 100%;
+        height: 100%;
+      }
+
+      .aboutME {
+        width: auto;
+        height: auto;
+      }
+
+      .left-section {
+        width: 100%;
+        max-width: 90%;
+        margin: auto;
+        border-radius: 20px;
+        background-color: #ffffff32;
+        margin-top: 20px;
+        padding: 2rem;
+        margin-bottom: 35px;
+      }
+
+      .right-section {
+        margin: auto;
+        margin-top: 25px;
+      }
+
+      .right-section > img {
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="left">Salil Jain Photography</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-me.html">About Me</a></li>
+          <li><a href="more-photos.html">More Photos</a></li>
+          <li><a href="contact-me.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="aboutME" style="justify-content: center">
+        <div class="left-section">
+          I am Salil Jain, a hobbyist Photogapher from Bhopal. I started my
+          journey as a Photographer back in 2018 when I got my first camera. I
+          started clicking photos of random objects without any story or motivde
+          behind the photos. Having no prior knowledge about the field or the
+          art form, I learned everything practically by hit and trial. With
+          constant experimenting, I found my genre - Wildlife Photography. Cut
+          to 2023, after 5 years of self learning, I am a featured photographer
+          in various platforms like BBC Earth, Nikon Asia, Nature in Focus and
+          MP Tourism. I have learnt many things about the camera equipments
+          during my journey as a Photogapher. Connect with me on my journey to
+          know more!
+        </div>
+        <div class="right-section">
+          <img src="abtme.jpg" alt="" style="width: 75%" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="socials">
+          Find me at:
+          <button
+            class="insta"
+            type="button"
+            onclick="location.href='https://instagram.com/salil._.jain?igshid=ZDdkNTZiNTM='"
+          >
+            <img src="ig.png" alt="" style="width: 30px" />
+          </button>
+          <button
+            class="twitter"
+            type="button"
+            onclick="location.href='https://twitter.com/Saliljain2510?t=D7-tDbdCBmy_v1bOuCZebw&s=09'"
+          >
+            <img src="tw.png" alt="" style="width: 30px" />
+          </button>
+          <button class="linkedin">
+            <img src="in.png" alt="" style="width: 30px" />
+          </button>
+        </div>
+      </div>
+    </footer>
+    
+        <script>
+      $(document).ready(function () {
+        $(window).bind("scroll", function () {
+          var gap = 50;
+          if ($(window).scrollTop() > gap) {
+            $("nav").addClass("active");
+          } else {
+            $("nav").removeClass("active");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salil - Photography Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Poppins:ital,wght@0,100;0,400;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Poppins:ital,wght@0,100;0,400;0,600;1,700&family=Press+Start+2P&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-image: url("LDK_3220.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+        font-family: "poppins", sans serif;
+        min-height: 100vh;
+        height: 100%;
+        /* padding: 75px; */
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        /* background-color: rgb(148, 181, 243); */
+        position: sticky;
+        width: 100%;
+        top: 0;
+        transition: all 0.5s;
+        z-index: 1000;
+      }
+
+      .active {
+        background-color: black;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        margin: 0 23px;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        text-decoration: none;
+        margin: 0 23px;
+        color: rgb(49, 146, 211);
+        transform: scale(1.1);
+      }
+
+      .left {
+        font-size: 3.5rem;
+      }
+
+      .FirstSection {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 75px;
+      }
+
+      .FirstSection > div {
+        width: 40%;
+      }
+
+      .rightSection img {
+        width: 100%;
+        margin-top: -40px;
+        border-radius: 20px;
+      }
+
+      .leftSection {
+        font-size: 3rem;
+        font-family: "Dancing Script", cursive;
+      }
+
+      .green {
+        color: rgb(25, 20, 85);
+      }
+
+      #element {
+        color: rgb(25, 20, 85);
+      }
+
+      .SecondSection {
+        width: 100%;
+        max-width: 90%;
+        margin: auto;
+        border-radius: 20px;
+        background-color: #ffffff32;
+        margin-top: 100px;
+        padding: 2rem;
+        font-size: 1.75rem;
+      }
+
+      .swiper {
+        width: 60vw;
+        aspect-ratio: 3/2;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 20px;
+        margin-bottom: 100px;
+        
+      }
+
+      footer {
+        background-color: #00000080;
+        width: auto;
+        height: 100px;
+        z-index: 1000;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .socials {
+        display: flex;
+        margin-top: 34px;
+        margin-left: 21px;
+        font-size: 1.5rem;
+        justify-content: center;
+      }
+
+      button {
+        display: flex;
+        width: 40px;
+        background-color: transparent;
+        border-width: 0px;
+        cursor: pointer;
+        width: 40px;
+        scale: 0.8;
+        margin-left: 20px;
+      }
+
+      button .insta {
+        margin-left: -90px;
+      }
+
+      .insta {
+        scale: 1;
+      }
+
+      .twitter {
+        scale: 1.2;
+      }
+
+      .linkedin {
+        scale: 0.9;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="left">Salil Jain Photography</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-me.html">About Me</a></li>
+          <li><a href="more-photos.html">More Photos</a></li>
+          <li><a href="contact-me.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="FirstSection">
+        <div class="leftSection">
+          Hello, I am <span class="green">Salil Jain</span> ,
+          <div>a Passionate</div>
+          <span id="element"></span>
+          <div>Hope you have a good time browsing through my collection!</div>
+        </div>
+        <div class="rightSection">
+          <img src="bg.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="SecondSection">
+        <h1>Experience</h1>
+        <div>
+          I started my journey as a Photographer back in 2018 when I got my
+          first camera. I started clicking photos of random objects without any
+          story or motivde behind the photos. Having no prior knowledge about
+          the field or the art form, I learned everything practically by hit and
+          trial. With constant experimenting, I found my genre - Wildlife
+          Photography. Cut to 2023, after 5 years of self learning, I am a
+          featured photographer in various platforms like BBC Earth, Nikon Asia,
+          Nature in Focus and MP Tourism.
+        </div>
+      </section>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="SJW_2988.jpg"
+              alt=""
+              style="width: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="SJW_9438.jpg"
+              alt=""
+              style="width: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="SJW_8525.jpg"
+              alt=""
+              style="width: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="SJW_6668.jpg"
+              alt=""
+              style="width: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="SJW_8595.jpg"
+              alt=""
+              style="width: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="SJW_2280.jpg"
+              alt=""
+              style="width: 100%; object-fit: cover"
+            />
+          </div>
+
+          ...
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="socials">
+          Find me at:
+          <button class="insta" type="button" onclick="location.href='https://instagram.com/salil._.jain?igshid=ZDdkNTZiNTM='">
+            <img src="ig.png" alt="" style="width: 30px" />
+          </button>
+          <button class="twitter" type="button" onclick="location.href='https://twitter.com/Saliljain2510?t=D7-tDbdCBmy_v1bOuCZebw&s=09'">
+            <img src="tw.png" alt="" style="width: 30px" />
+          </button>
+          <button class="linkedin">
+            <img src="in.png" alt="" style="width: 30px;">
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Wildlife Photographer",
+          "Astro Photographer",
+          "Landscape Photographer",
+        ],
+        typeSpeed: 50,
+        loop: true,
+      });
+
+      $(document).ready(function () {
+        $(window).bind("scroll", function () {
+          var gap = 50;
+          if ($(window).scrollTop() > gap) {
+            $("nav").addClass("active");
+          } else {
+            $("nav").removeClass("active");
+          }
+        });
+      });
+
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        // direction: "vertical",
+        //loop: true,
+        autoplay: {
+          delay: 3000,
+        },
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
+</html>
